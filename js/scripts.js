@@ -5,6 +5,11 @@ const sidemenu = document.getElementById("sidemenu");
 const btnlike = document.getElementById("btnlike");
 const btncart = document.getElementById("btncart");
 const btnmenu = document.getElementById("btnmenu");
+const preloader = document.getElementById("preloader");
+
+window.onload = () => {
+  preloader.style.display = "none";
+};
 
 btncart.addEventListener("click", () => {
   cart.style.transform = "translateX(0px)";
